@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=latin-ext');
+
+$backgroundImage: 'https://images.unsplash.com/photo-1542365887-1149961dccc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80';
+$patternImage: 'https://www.toptal.com/designers/subtlepatterns/patterns/fake_brick.png';
+$logoImage: 'https://cdn1.vectorstock.com/i/1000x1000/69/20/steak-house-logo-simple-style-vector-21376920.jpg';
+
+$formAndFigureShowDelay: 1s;
+$formAndFigureShowTime: 1s;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  
+    form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+
+        animation: FORM_SHOW_ANIMATION $formAndFigureShowTime;
+        animation-delay: $formAndFigureShowDelay;
+        animation-fill-mode: forwards;
+        backface-visibility: hidden;
+        perspective: 1000;
+
+        .logo {
+            position: relative;
+            max-width: 60px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                svg {
+                    animation-name: SHAKE_ANIMATION;
+                    animation-duration: 0.8s;
+                    transform-origin: 50% 50%;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+
+                .vapor {
+                    span {
+                        animation: VAPOR_ANIMATION 2s linear infinite;
+                    }
+                }
+            }
+
+            &-background {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                border-radius: 50%;
+            }
+
+            .vapor {
+                width: 50px;
+                height: 30px;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                bottom: 10px;
+                z-index: 4;
+            }
+            
+            .vapor span {
+                width: 1px;
+                background-color: black;
+                filter: opacity(0);
+            }
+            
+            .vapor span:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            
+            .vapor span:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+            
+            .vapor span:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+            
+            .vapor span:nth-child(4) {
+                animation-delay: 0.4s;
+            }
+            
+            .vapor span:nth-child(5) {
+                animation-delay: 0.2s;
+            }
+
+            svg {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                pointer-events: none;
+                fill: #603431;
+
+                &.steak {
+                    position: absolute;
+                    z-index: 3;
+                    fill: #CA675C;
+                }
+            }
+        }
+
+        input[type=text], input[type=password] {
+            position: relative;
+            height: 50px;
+            border-radius: 4px;
+            border: solid 1px #dbdbdb;
+            background-color: #ffffff;
+            padding: 0px 15px;
+            max-width: 250px;
+            width: 100%;
+            margin-bottom: 15px;
+            transition-duration: .5s;
+            transition-property: border-color;
+            outline: none;
+            appearance: none;
+            font-size: 14px;
+            color: #756757;
+            z-index: 2;
+
+            &::placeholder {
+                color: #dbdbdb;
+            }
+        
+            &:focus {
+                border-color: #756757;
+                transition-duration: .5s;
+                transition-property: border-color;
+            }
+        }
+
+        input[type=submit] {
+            position: relative;
+            max-width: 280px;
+            width: 100%;
+            height: 50px;
+            border: 0px;
+            background-color: #262427;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            letter-spacing: 5px;
+            appearance: none;
+            transition-duration: .5s;
+            transition-property: background-color;
+            z-index: 2;
+
+            &:hover {
+                background-color: #756757;
+                transition-duration: .5s;
+                transition-property: background-color;
+            }
+        }
+
+        .message {
+            font-size: 14px;
+            margin-top: 15px;
+            opacity: 0;
+            transition-duration: .5s;
+            transition-property: opacity;
+
+            &.active {
+                opacity: 1;
+                transition-duration: .5s;
+                transition-property: opacity;
+            }
+
+            &.fail {
+                color: red;
+            }
+
+            &.success {
+                color: green;
+            }
+        }
+    }
+  
+    figure {
+        position: relative;
+        overflow: hidden;
+        width: 0%;
+        background-image: url($backgroundImage);
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 3px 0px 3px 0px rgba(0,0,0,0.26);
+        transition-duration: .5s;
+        transition-property: opacity;
+
+        animation: FIGURE_SHOW_ANIMATION $formAndFigureShowTime;
+        animation-delay: $formAndFigureShowDelay;
+        animation-fill-mode: forwards;
+        backface-visibility: hidden;
+        perspective: 1000;
+    
+        &.passive {
+            opacity: 0;
+            transition-duration: .5s;
+            transition-property: opacity;
+        }
+    
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url($patternImage);
+            opacity: .6;
+        }
+    }
+}
+
+@keyframes FORM_SHOW_ANIMATION {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes FIGURE_SHOW_ANIMATION {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes SHAKE_ANIMATION {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes VAPOR_ANIMATION {
+    0% {
+        transform: translateY(0);
+        filter: opacity(0) blur(0.2em);
+    }
+
+    50% {
+        transform: translateY(-2em);
+        filter: opacity(1) blur(0.4em);
+    }
+
+    100% {
+        transform: translateY(-4em);
+        filter: opacity(0) blur(0.6em);
+    }
+}
