@@ -16,11 +16,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .chosen-section {
     width: 90%;
     max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.chosen-section:last-of-type {
+    margin-bottom: 0;
 }
 
 .chosen-container {
