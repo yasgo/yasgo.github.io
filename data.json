@@ -1,15 +1,32 @@
 {
+    "root": "https://yasinkalkan.github.io/",
     "projects": [
         {
             "project": "OFFICIAL WEBSITE",
             "client": "Pelin Güley",
             "summary": "Pelin Güley Interior Architecture, founded in 2011; interior and furniture design, project planning, application control and application services.",
             "detail": "Pelin Güley Interior Architecture, founded in 2011; interior and furniture design, project planning, application control and application services. From its establishment until today, it has realized interior projects in residential, office, sales office, public building, embassy building, hotel, store, restaurant, cafe areas. The place has adopted the principle of designing up-to-date but timeless spaces with a brutalist approach without giving up the lean, clear, natural way with the elements of functionality, necessity which is similar to the identity of the user. Designed spaces, furnitures are analyzed with fine and meticulous details. It has a solution-oriented working discipline that is suitable for today's conditions.",
-            "picture": "../../assets/img/portfolio-color.png",
+            "picture": "projects/pelin-guley/picture.jpg",
             "gallery": [
                 {
-                    "title": "Ana Sayfa",
-                    "url": "home.jpg"
+                    "title": "Home",
+                    "url": "projects/pelin-guley/gallery/picture-1.jpg"
+                },
+                {
+                    "title": "Projects",
+                    "url": "projects/pelin-guley/gallery/picture-2.jpg"
+                },
+                {
+                    "title": "About",
+                    "url": "projects/pelin-guley/gallery/picture-3.jpg"
+                },
+                {
+                    "title": "Projects Page",
+                    "url": "projects/pelin-guley/gallery/picture-4.jpg"
+                },
+                {
+                    "title": "Contact",
+                    "url": "projects/pelin-guley/gallery/picture-5.jpg"
                 }
             ],
             "credits": {
@@ -17,6 +34,42 @@
                 "project": "Official Website",
                 "developer": "Yasin Burak Kalkan",
                 "designer": "Cana Arıcan",
+                "company": "Gri Creative"
+            }
+        },
+        {
+            "project": "OYAK",
+            "client": "Göksu Park",
+            "summary": "OYAK Göksupark is a candidate to be the most ambitious project that blends modern life with the colors of nature in Ankara.",
+            "detail": "The house is where the family is. Welcome to OYAK Göksupark, which consists of 1876 residences with different width options from 1 + 1 to 4 + 1, right next to Göksu Park, which is the favorite living area of Ankara that combines green and blue. For your peaceful and happy days, we build with the strength we receive from our family bonds.",
+            "picture": "projects/oyak-goksupark/picture.jpg",
+            "gallery": [
+                {
+                    "title": "Home",
+                    "url": "projects/oyak-goksupark/gallery/picture-1.jpg"
+                },
+                {
+                    "title": "Overview",
+                    "url": "projects/oyak-goksupark/gallery/picture-2.jpg"
+                },
+                {
+                    "title": "Features",
+                    "url": "projects/oyak-goksupark/gallery/picture-3.jpg"
+                },
+                {
+                    "title": "Gallery",
+                    "url": "projects/oyak-goksupark/gallery/picture-4.jpg"
+                },
+                {
+                    "title": "Floor Plans",
+                    "url": "projects/oyak-goksupark/gallery/picture-5.jpg"
+                }
+            ],
+            "credits": {
+                "client": "OYAK",
+                "project": "Göksu Park",
+                "developer": "Yasin Burak Kalkan",
+                "designer": "Emrah Aybastı",
                 "company": "Gri Creative"
             }
         }
