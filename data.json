@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "project": "OFFICIAL WEBSITE",
+            "client": "Pelin Güley",
+            "summary": "Pelin Güley Interior Architecture, founded in 2011; interior and furniture design, project planning, application control and application services.",
+            "detail": "Pelin Güley Interior Architecture, founded in 2011; interior and furniture design, project planning, application control and application services. From its establishment until today, it has realized interior projects in residential, office, sales office, public building, embassy building, hotel, store, restaurant, cafe areas. The place has adopted the principle of designing up-to-date but timeless spaces with a brutalist approach without giving up the lean, clear, natural way with the elements of functionality, necessity which is similar to the identity of the user. Designed spaces, furnitures are analyzed with fine and meticulous details. It has a solution-oriented working discipline that is suitable for today's conditions.",
+            "picture": "../../assets/img/portfolio-color.png",
+            "gallery": [
+                {
+                    "title": "Ana Sayfa",
+                    "url": "home.jpg"
+                }
+            ],
+            "credits": {
+                "client": "Pelin Güley",
+                "project": "Official Website",
+                "developer": "Yasin Burak Kalkan",
+                "designer": "Cana Arıcan",
+                "company": "Gri Creative"
+            }
+        }
+    ]
+}
