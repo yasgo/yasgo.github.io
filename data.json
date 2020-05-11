@@ -81,6 +81,51 @@
                 "designer": "Emrah Aybastı",
                 "company": "Gri Creative"
             }
+        },
+        {
+            "project": "OFFICIAL WEBSITE",
+            "client": "Eros Condom",
+            "color": "#f85e75",
+            "summary": "I know you! You are not the man of such abnormal movements, you like classic. What is nice for you is always the original.",
+            "detail": [
+                "I know you! You are not the man of such abnormal movements, you like classic. What is nice for you is always the original. You do not make modifications to the classic car, you also do not like unnatural makeup in women.",
+                "But when it is the place, you are completely crazy, opening the coat in ice cold weather and walking is your event.",
+                "Classic is good good ... That's why, this iLOVE is for you!"
+            ],
+            "picture": "projects/eros-condom/picture.jpg",
+            "gallery": [
+                {
+                    "title": "Home",
+                    "url": "projects/eros-condom/gallery/picture-1.jpg"
+                },
+                {
+                    "title": "Product Normal",
+                    "url": "projects/eros-condom/gallery/picture-2.jpg"
+                },
+                {
+                    "title": "Product Halkalı",
+                    "url": "projects/eros-condom/gallery/picture-3.jpg"
+                },
+                {
+                    "title": "Product Kabartmalı",
+                    "url": "projects/eros-condom/gallery/picture-4.jpg"
+                },
+                {
+                    "title": "Product Özel Kıvrımlı",
+                    "url": "projects/eros-condom/gallery/picture-5.jpg"
+                },
+                {
+                    "title": "Map",
+                    "url": "projects/eros-condom/gallery/picture-5.jpg"
+                }
+            ],
+            "credits": {
+                "client": "Eros Condom",
+                "project": "Official Website",
+                "developer": "Yasin Burak Kalkan",
+                "designer": "Halit Görgeç",
+                "company": "Creasoup"
+            }
         }
     ]
 }
