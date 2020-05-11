@@ -2,6 +2,7 @@
     "root": "https://yasinkalkan.github.io/",
     "projects": [
         {
+            "id": 0,
             "project": "OFFICIAL WEBSITE",
             "client": "Pelin Güley",
             "color": "#40d8e5",
@@ -43,6 +44,7 @@
             }
         },
         {
+            "id": 1,
             "project": "OYAK",
             "client": "Göksu Park",
             "color": "#69cbda",
@@ -83,6 +85,7 @@
             }
         },
         {
+            "id": 2,
             "project": "OFFICIAL WEBSITE",
             "client": "Eros Condom",
             "color": "#f85e75",
