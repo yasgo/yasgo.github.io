@@ -1,1 +1,0 @@
-# yasinkalkan.github.io test
