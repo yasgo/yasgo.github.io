@@ -3,6 +3,7 @@
     "projects": [
         {
             "id": 0,
+            "url": "http://www.pelinguley.com/",
             "project": "OFFICIAL WEBSITE",
             "client": "Pelin Güley",
             "color": "#40d8e5",
@@ -45,6 +46,7 @@
         },
         {
             "id": 1,
+            "url": "https://oyakgoksupark.com/",
             "project": "OYAK",
             "client": "Göksu Park",
             "color": "#69cbda",
@@ -86,6 +88,7 @@
         },
         {
             "id": 2,
+            "url": "http://eroscondoms.com/",
             "project": "OFFICIAL WEBSITE",
             "client": "Eros Condom",
             "color": "#f85e75",
@@ -132,6 +135,7 @@
         },
         {
             "id": 3,
+            "url": "https://www.egm.org.tr/",
             "project": "E-DEVLET",
             "client": "Emeklilik Gözetim Merkezi",
             "color": "#3d82c3",
@@ -181,6 +185,7 @@
         },
         {
             "id": 4,
+            "url": "https://www.medyasoft.com.tr/tr",
             "project": "OFFICIAL WEBSITE",
             "client": "Medyasoft",
             "color": "#0067e0",
@@ -226,6 +231,7 @@
         },
         {
             "id": 5,
+            "url": "https://uets.saglik.gov.tr/",
             "project": "SAĞLIK BAKANLIĞI",
             "client": "Uzmanlık Eğitimi Takip Sistemi",
             "color": "#25a9ba",
@@ -270,6 +276,7 @@
         },
         {
             "id": 6,
+            "url": "https://www.ito.org.tr/tr",
             "project": "E-DEVLET",
             "client": "İstanbul Ticaret Odası",
             "color": "#25A9BA",
@@ -316,6 +323,7 @@
         },
         {
             "id": 7,
+            "url": "http://www.etislojistik.com/",
             "project": "OFFICIAL WEBSITE",
             "client": "Etis Lojistik",
             "color": "#f07d00",
