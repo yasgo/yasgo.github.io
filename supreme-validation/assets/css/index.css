@@ -10413,7 +10413,6 @@ i {
 }
 .supreme-validate .checkbox-list li {
   list-style-type: none;
-  margin-bottom: 15px;
 }
 .supreme-validate .checkbox-list li:not(:last-child) {
   margin-right: 15px;
@@ -10469,7 +10468,6 @@ i {
 }
 .supreme-validate .radio-list li {
   list-style-type: none;
-  margin-bottom: 15px;
 }
 .supreme-validate .radio-list li:not(:last-child) {
   margin-right: 15px;
@@ -10602,7 +10600,7 @@ i {
   font-size: 11px;
   font-weight: 300;
   color: #FF3B30;
-  margin-top: 10px;
+  margin-top: 5px;
   display: none;
 }
 .supreme-validate-element.error input:not([type=radio]):not([type=checkbox]) {
@@ -10642,4 +10640,39 @@ i {
 }
 .supreme-validate-element.error::after {
   display: block;
+}
+.supreme-validate-element.success input:not([type=radio]):not([type=checkbox]) {
+  border-color: #4FC56B;
+  color: #4FC56B;
+}
+.supreme-validate-element.success input:not([type=radio]):not([type=checkbox])::placeholder {
+  color: #a7ecb8;
+}
+.supreme-validate-element.success input:not([type=radio]):not([type=checkbox]):focus {
+  border-color: #4FC56B;
+}
+.supreme-validate-element.success .select-container::after {
+  border-left-color: #4FC56B;
+  color: #ffffff;
+  background-color: #4FC56B;
+}
+.supreme-validate-element.success .select-container select {
+  border-color: #4FC56B;
+  color: #4FC56B;
+}
+.supreme-validate-element.success .checkbox-list li label, .supreme-validate-element.success .radio-list li label {
+  color: #4FC56B;
+}
+.supreme-validate-element.success .checkbox-list li label::before, .supreme-validate-element.success .radio-list li label::before {
+  border-color: #4FC56B;
+}
+.supreme-validate-element.success textarea {
+  border-color: #4FC56B;
+  color: #4FC56B;
+}
+.supreme-validate-element.success textarea::placeholder {
+  color: #a7ecb8;
+}
+.supreme-validate-element.success label {
+  color: #4FC56B;
 }
